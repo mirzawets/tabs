@@ -1,5 +1,5 @@
 function method1() {
-  // С дата атрибутами
+  // With data attributes
 
   const tabs = document.getElementById('tabs');
   const contents = document.querySelectorAll('.content');
@@ -28,7 +28,7 @@ function method1() {
 method1();
 
 function method2() {
-  // С помощью метода indexOf()
+  // With indexOf()
 
   const tabs = document.getElementById('tabs');
   const contents = document.querySelectorAll('.content');
@@ -37,7 +37,7 @@ function method2() {
     const tabsArr = Array.from(tabs.children);
     const contentsArr = [...contents];
 
-    // Дополнительный способ конвертирования
+    // Additional method to convert
     // const contentsArr = Object.assign([], contents);
 
     tabsArr.forEach((tab) => tab.classList.remove('active'));
@@ -61,7 +61,7 @@ function method2() {
 method2();
 
 function method3() {
-  // Более короткий способ
+  // The shorter way
 
   const tabs = document.querySelectorAll('.tab-btn');
   const contents = document.querySelectorAll('.content');
